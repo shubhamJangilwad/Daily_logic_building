@@ -44,4 +44,11 @@ for key, value in my_dict.items():
     initial = my_dict.get(key)
     user_data = initial[0].get(name_input)
     if user_data:
-        print(user_data[0].get("address").get("name"))
+        address = user_data[0].get("address")
+
+        for addr_key, addr_value in address.items():
+            if type(addr_value) == list:
+                sarpanch_name = addr_value[0].get("sarpanch_name")
+                print(sarpanch_name)
+
+
