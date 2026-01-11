@@ -41,8 +41,10 @@ my_dict = {
 name_input = input("Enter the user name: ")
 
 for key, value in my_dict.items():
+
     initial = my_dict.get(key)
     user_data = initial[0].get(name_input)
+
     if user_data:
         address = user_data[0].get("address")
 

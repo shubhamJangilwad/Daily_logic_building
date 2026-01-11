@@ -20,3 +20,6 @@ import random
 
 numbers = [random.randint(1, 50) for i in range(5)]
 print(numbers)
+
+a = ["Shubham","Hanumant","Chagan","Harshal","Rajat"]
+print(random.choice(a))
