@@ -24,3 +24,17 @@ c2 = Employee()
 print(c1.company,c2.salary)
 print(c2.company,c2.salary)
 
+
+
+
+
+class Student:
+    def __init__(self, name):
+        self.name = name
+
+    def show_name(self):     # instance method
+        print(self.name)
+
+s1 = Student("Ram")
+s1.show_name()
+print(s1.name)
